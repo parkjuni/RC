@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RtC-TS-4Dp">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PopUP-->
+        <scene sceneID="qA6-Uz-Jm4">
+            <objects>
+                <viewController storyboardIdentifier="popupView" id="RtC-TS-4Dp" customClass="popUP" customModule="starbucks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fng-Ob-f1S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJf-ld-6sV">
+                                <rect key="frame" x="45" y="83" width="285" height="501"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup" translatesAutoresizingMaskIntoConstraints="NO" id="7Fb-f9-OKR">
+                                        <rect key="frame" x="0.0" y="34" width="285" height="379"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjb-lv-5ga">
+                                        <rect key="frame" x="55" y="431" width="175" height="49"/>
+                                        <color key="backgroundColor" red="0.20569588280000001" green="0.63070757769999997" blue="0.43230378330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" red="0.20569588280000001" green="0.63070757769999997" blue="0.43230378330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="다시보지 않기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="click_button:" destination="RtC-TS-4Dp" eventType="touchUpInside" id="DH0-OE-IAl"/>
+                                            <action selector="close:" destination="RtC-TS-4Dp" eventType="touchUpInside" id="dCE-SI-yTH"/>
+                                            <action selector="close_button:" destination="RtC-TS-4Dp" eventType="touchUpInside" id="hwc-zr-KVP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96245547279792742" green="0.96245547279792742" blue="0.96245547279792742" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kjb-lv-5ga" secondAttribute="bottom" constant="21" id="EF3-9W-qmL"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Fb-f9-OKR" secondAttribute="bottom" constant="88" id="MAg-Rn-4FK"/>
+                                    <constraint firstItem="7Fb-f9-OKR" firstAttribute="top" secondItem="SJf-ld-6sV" secondAttribute="top" constant="34" id="NRx-64-8LQ"/>
+                                    <constraint firstItem="kjb-lv-5ga" firstAttribute="top" secondItem="7Fb-f9-OKR" secondAttribute="bottom" constant="18" id="OI4-1Y-fYr"/>
+                                    <constraint firstAttribute="trailing" secondItem="kjb-lv-5ga" secondAttribute="trailing" constant="55" id="Ozr-lD-6Ur"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Fb-f9-OKR" secondAttribute="trailing" id="P64-Iz-Eh6"/>
+                                    <constraint firstItem="7Fb-f9-OKR" firstAttribute="leading" secondItem="SJf-ld-6sV" secondAttribute="leading" id="QcK-xT-kZW"/>
+                                    <constraint firstItem="kjb-lv-5ga" firstAttribute="top" secondItem="7Fb-f9-OKR" secondAttribute="bottom" constant="18" id="g7j-86-c1h"/>
+                                    <constraint firstItem="kjb-lv-5ga" firstAttribute="leading" secondItem="SJf-ld-6sV" secondAttribute="leading" constant="55" id="lg0-Oh-t1W"/>
+                                    <constraint firstItem="kjb-lv-5ga" firstAttribute="leading" secondItem="SJf-ld-6sV" secondAttribute="leading" constant="55" id="w1f-Ov-2Gp"/>
+                                    <constraint firstAttribute="trailing" secondItem="kjb-lv-5ga" secondAttribute="trailing" constant="55" id="y6F-b5-GOF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3fX-2v-sNL"/>
+                        <color key="backgroundColor" red="0.40847636010362698" green="0.40847636010362698" blue="0.40847636010362698" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SJf-ld-6sV" firstAttribute="centerY" secondItem="3fX-2v-sNL" secondAttribute="centerY" id="0KG-9D-SB5"/>
+                            <constraint firstItem="SJf-ld-6sV" firstAttribute="top" secondItem="3fX-2v-sNL" secondAttribute="top" constant="83" id="0Tj-MQ-YfP"/>
+                            <constraint firstItem="SJf-ld-6sV" firstAttribute="centerX" secondItem="3fX-2v-sNL" secondAttribute="centerX" id="7Rq-dv-gZN"/>
+                            <constraint firstItem="7Fb-f9-OKR" firstAttribute="centerX" secondItem="3fX-2v-sNL" secondAttribute="centerX" id="9sU-Jn-IA6"/>
+                            <constraint firstItem="3fX-2v-sNL" firstAttribute="trailing" secondItem="7Fb-f9-OKR" secondAttribute="trailing" constant="45" id="e28-4q-yfA"/>
+                            <constraint firstItem="7Fb-f9-OKR" firstAttribute="leading" secondItem="3fX-2v-sNL" secondAttribute="leading" constant="45" id="rjD-Pr-nXr"/>
+                            <constraint firstItem="SJf-ld-6sV" firstAttribute="leading" secondItem="3fX-2v-sNL" secondAttribute="leading" constant="45" id="rkv-Kg-foD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="close_button" destination="kjb-lv-5ga" id="WMa-jz-VEC"/>
+                        <outlet property="popupView" destination="SJf-ld-6sV" id="d9E-fO-eYZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ppa-lS-z1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="74.212893553223395"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popup" width="334" height="484"/>
+    </resources>
+</document>
